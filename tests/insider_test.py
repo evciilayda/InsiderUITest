@@ -17,6 +17,6 @@ def test_insider(driver):
     careers_page.navigate_to_teams()
     qa_page.navigate_to_qa_team()
     qa_page.navigate_to_jobs()
-    jobs_page.filter_jobs_by_location("Istanhbul, Turkey")
+    jobs_page.filter_jobs_by_location("Istanbul, Turkey")
     assert jobs_page.verify_job_list_exists(), "Job list bulunamadı!"
     jobs_page.view_role()
