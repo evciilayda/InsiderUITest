@@ -31,7 +31,7 @@ jobs:
           pytest --driver=chrome tests/ --html=report.html --self-contained-html || echo "Tests failed"
 
       - name: Upload test report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: test-report
           path: report.html
@@ -44,10 +44,11 @@ jobs:
           else
             echo "No screenshots directory found. Skipping artifact upload."
           fi
+        continue-on-error: true
 
-      - name: Upload screenshots on failure
-        if: failure()
-        uses: actions/upload-artifact@v3
+      - name: Upload screenshots artifact
+        if: failure() && steps.check-and-upload-screenshots-if-tests-fail.outcome == 'success'
+        uses: actions/upload-artifact@v4
         with:
           name: screenshots
           path: screenshots/
