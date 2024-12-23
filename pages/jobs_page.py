@@ -22,6 +22,20 @@ class JobsPage(BasePage):
     def verify_job_list_exists(self):
         return self.is_element_present(*self.JOBS_LIST)
 
+    def verify_job_description(self):
+        job_cards = self.driver.find_elements(By.CSS_SELECTOR, "div[class='position-list-item-wrapper bg-light']")
+        self.scroll_by(200)
+        for job in job_cards:
+            try:
+
+                position = job.find_element(By.XPATH, ".//p[@class='position-title font-weight-bold']").text
+                department = job.find_element(By.CSS_SELECTOR,"span.position-department.text-large.font-weight-600.text-primary").text
+                location = job.find_element(By.CSS_SELECTOR, "div.position-location.text-large").text
+
+                print(f"Position: {position}, Department: {department}, Location: {location}")
+            except Exception as e:
+                print(f"An error occurred while extracting job details: {e}")
+
     def view_role(self):
         button =self.find_element(By.XPATH, self.VIEW_ROLE)
         action = ActionChains(self.driver)

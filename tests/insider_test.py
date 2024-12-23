@@ -14,9 +14,11 @@ def test_insider(driver):
     home_page.accept_cookie()
     home_page.navigate_to_company()
     home_page.navigate_to_careers()
+    careers_page.careers_page_control()
     careers_page.navigate_to_teams()
     qa_page.navigate_to_qa_team()
     qa_page.navigate_to_jobs()
     jobs_page.filter_jobs_by_location("Istanbul, Turkey")
     assert jobs_page.verify_job_list_exists(), "Job list bulunamadı!"
+    jobs_page.verify_job_description()
     jobs_page.view_role()
