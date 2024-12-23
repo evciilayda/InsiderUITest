@@ -31,4 +31,14 @@ Otomasyona ait adımların , metodlarla birlikte sırayla çağrıldığı main 
 3.  Sayfa genişletilerek 'Qaulity Assurance' seçilir ve konum olarak 'Istanbul, Turkey' olarak filtrelenir.
 4.  Filtreyle gelen iş tanımlarının filtreye uygun olarak geldiği kontrol edilir.
 5.  View role'a tıklanır ve pozisyon başvuru sayfasına yönlendirildiği kontrol edilir.
+## Test Sonucu
+![image](https://github.com/user-attachments/assets/177abda4-194a-4380-aafb-401ec2eac07e)
+## Notes
+Hata aldığında SS alan yapı kurulmuştur. (tests >screenshots)
+Github Action yapısı kurulmuştur.
+Chrome ve Yandex browserlarda çalışması için parametrik yapı sağlanmıştır.
+![image](https://github.com/user-attachments/assets/e59c09fc-3331-4881-ba37-0bc30c71862d)
+
+
+
                                                               
