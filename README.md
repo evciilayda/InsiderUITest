@@ -26,6 +26,9 @@ navigate_to_qa_team
 navigate_to_jobs
 ## insider_test.py
 Otomasyona ait adımların , metodlarla birlikte sırayla çağrıldığı main classtır. Otomasyon seneryosunun adımları şu şekildedir:
-1-"https://useinsider.com/" sayfasına gidilir ve sayfanın başarıyla yüklendiği kontrol edilir.                                                                               2-Menüden Company sonrasında Carees seçilir ve Careers sayfasının başarıyla yüklendiği kontrol edilir.                                                                      3- See All Jobs ile sayfa genişletirlerek Quality Assurance seçilir. Filtreleme butonununda "Istanbul, Turkey" konumu filtrelenir.                                           4-Bu filtreye uygun ilanların varlığı kontrol edilir.                                                                                                                
-5.“View Role”butonuna basılarak , url'in Lever Application Form sayfasına yönlendirildiği kontrol edilir.
-
+1-"https://useinsider.com/" sayfasına gidilir ve sayfanın başarıyla yüklendiği kontrol edilir.
+2-Menüden Company sonrasında Carees seçilir ve Careers sayfasının başarıyla yüklendiği kontrol edilir.
+3- See All Jobs ile sayfa genişletirlerek Quality Assurance seçilir. Filtreleme butonununda "Istanbul, Turkey" konumu filtrelenir. 
+4-Bu filtreye uygun ilanların varlığı kontrol edilir.
+5.“View Role”butonuna basılarak , url'in Lever Application Form sayfasına yönlendirildiği kontrol edilir.                                                                                                                          
+                                                              
